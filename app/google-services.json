@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "635877489638",
+    "project_id": "taskhub-21e06",
+    "storage_bucket": "taskhub-21e06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635877489638:android:13dae401ac67846eeb7427",
+        "android_client_info": {
+          "package_name": "br.edu.ifsp.dmos5.taskhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635877489638-mpmddu0r8g5dv0ks024eo9k1usacmvss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5PaSg8t7VPoEA5Sh6zjPmqnXQpBG1yAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635877489638-mpmddu0r8g5dv0ks024eo9k1usacmvss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

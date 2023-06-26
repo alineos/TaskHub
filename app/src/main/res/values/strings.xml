@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TaskHub</string>
+    <string name="user_name">Nome de Usuario</string>
+    <string name="newAccount">Criar Conta</string>
+    <string name="login">Acessar</string>
+    <string name="password">Senha</string>
+    <string name="name">Nome</string>
+    <string name="email">E-Mail</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="taskAcess">Acessar minhas tarefas</string>
+    <string name="manageTask">Gerencie suas tarefas</string>
+    <string name="title">Titulo</string>
+    <string name="observation">Observações</string>
+    <string name="deadline">Data limite</string>
+    <string name="priority">Prioridade</string>
+    <string name="createTask">Criar Tarefa</string>
+    <string name="concludeTask">Concluir Tarefa</string>
+    <string name="HintTextBusca">Search</string>
+</resources>

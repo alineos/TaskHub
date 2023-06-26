@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NewTaskActivity">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:textAlignment="center"
+        android:hint="@string/title"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <EditText
+        android:id="@+id/editTextObservation"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/observation"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_edittext"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toStartOf="@id/editTextTitle"
+        app:layout_constraintTop_toBottomOf="@id/editTextTitle" />
+
+
+
+    <EditText
+        android:id="@+id/editTextDeadline"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/deadline"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toStartOf="@id/editTextObservation"
+        app:layout_constraintTop_toBottomOf="@id/editTextObservation" />
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextDeadline"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAlta"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Alta"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="419dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipMedia"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Media"
+            android:textAlignment="center"
+            android:textColor="#00FF00"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="419dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBaixa"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Baixa"
+            android:textAlignment="center"
+            android:textColor="#0000FF"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="419dp" />
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/buttonCreateTask"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/createTask"
+        android:backgroundTint="@color/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chipGroup" />
+
+ <Button
+        android:id="@+id/buttonConcludeTask"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/concludeTask"
+        android:backgroundTint="@color/button_conclude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCreateTask" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
